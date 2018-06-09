@@ -1,0 +1,25 @@
+/* pages/add/add.wxss */
+.form-button {
+   background-color: #09BB07;
+   color: white;
+   margin: 20rpx;
+}
+
+.section {
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    border-radius: 4rpx;
+    cursor: pointer;
+}
+
+.section-item {
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  min-height: 2.4rem;
+  height: 2.4rem;
+  line-height: 2.4rem;
+}

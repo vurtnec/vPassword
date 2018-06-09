@@ -1,0 +1,80 @@
+/**index.wxss**/
+
+.blank {
+ height: 80rpx;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 25rpx;
+}
+
+.password-list {
+   display:block;
+}
+
+.password-item {
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    border-radius: 4rpx;
+    cursor: pointer;
+}
+
+.password-info{
+    display: flex;
+    padding: 15rpx;
+    align-items: center;
+    flex-direction: row;
+}
+
+.password-title{
+    flex: 1;
+}
+
+.password-dropdown {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.password-info-show{
+    opacity: .4;
+}
+
+.operation{
+    position: relative;
+    padding-top: 26rpx;
+    padding-bottom: 26rpx;
+    padding-left: 40rpx;
+    padding-right: 40rpx;
+}
+
+.operation-line{
+    content: " ";
+    position: absolute;
+    left: 40rpx;
+    bottom: 0;
+    right: 40rpx;
+    height: 1rpx;
+    background-color: #DFDFDF;
+}
+
+.password-droplist{
+    display: none;
+}
+
+.password-droplist-show{
+    display: block;
+}
+
+.password-content {
+  display: none;
+}
+
+.add-button {
+  margin-top: 20rpx;
+}

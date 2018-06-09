@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class='container'>
+  <view  class="text">
+    <text>验证失败或查看时间已过期，请重新打开小程序，验证指纹/面部后使用。</text>
+  </view>
+</view>

@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/list/list",
+    "pages/add/add"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fbf9fe",
+    "navigationBarTitleText": "vPassword",
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "#fbf9fe"
+  }
+}

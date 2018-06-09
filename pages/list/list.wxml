@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<view class='container'>
+  <view class="password-list">
+  <block wx:for="{{passwords}}" wx:key="key" wx:for-item="password">
+    <view class="password-item">
+      <view id="{{password.name}}" class="password-info {{password.show ? 'password-info-show' : ''}}" bindtap="widgetsToggle" >
+         <text class="password-title">{{password.name}}</text>
+         <image class="password-dropdown" src="resources/form.png" background-size="cover" />
+      </view> 
+       <view class="password-droplist {{password.show ? 'password-droplist-show' : ''}}">
+         <view data-password="{{password}}" class="operation" bindtap="copyAcct2CB">
+              <text class="operation-name">复制帐号</text>
+              <view class="operation-line"></view>
+          </view>
+          <view data-password="{{password}}" class="operation" bindtap="copyPass2CB">
+              <text class="operation-name">复制密码</text>
+              <view class="operation-line"></view>
+          </view>
+          <view data-password="{{password}}" class="operation" bindtap='deletePassword'>
+              <text class="operation-name">删除</text>
+              <view class="operation-line"></view>
+          </view>
+          <view data-password="{{password}}" class="operation" bindtap="editPassword">
+              <text class="operation-name">编辑</text>
+              <view class="operation-line"></view>
+          </view>
+      </view>
+    </view>
+  </block>
+</view>
+<navigator url="/pages/add/add" hover-class="navigator-hover">
+    <button class="add-button" type="default">添加</button>
+</navigator>
+
+<button class="add-button" type="default" bindtap="backup">导出密码至剪贴板</button>
+<button class="add-button" type="default" bindtap='restoreBackup'>从剪贴板恢复备份</button>
+<view class="blank"><text>    </text></view>
+</view>
+<view class="footer"><text>联系我: vurtnec@gmail.com</text></view>

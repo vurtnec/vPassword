@@ -1,0 +1,21 @@
+<!--pages/add/add.wxml-->
+<view class='container'>
+<form class="form" catchsubmit="formSubmit" catchreset="formReset">
+  <view class="section">
+      <view class="section-item">标题</view>
+      <input class="section-item" name="name" confirm-type="next" placeholder="请输入标题" value="{{name}}" />
+  </view>
+  <view class="section">
+      <view class="section-item">帐号</view>
+      <input class="section-item" name="account" confirm-type="next" placeholder="请输入帐号" value="{{account}}" />
+  </view>
+  <view class="section">
+      <view class="section-item">密码</view>
+      <input class="section-item" name="password" confirm-type="go" placeholder="请输入密码" value="{{password}}" />
+  </view>
+  <view class="btn-area">
+      <button class="form-button" formType="submit">提交</button>
+      <button class="form-button" formType="reset">重置</button>
+  </view>
+</form>
+</view>
